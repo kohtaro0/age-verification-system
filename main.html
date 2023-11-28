@@ -1,14 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>年齢確認</title>
-</head>
-<body>
-<h2>年齢確認</h2>
-<p>対象年齢は20歳以上です</p>
-<script src="Source.py"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>age verification</title>
+  </head>
+
+  <body>
+    <main class="py-5 grid gap-y-4 grid-cols-1 place-items-center">
+      <p id="title" class="text-center text-7xl"></p>
+    </main>
+
+    <py-script output="title">
+import platform # 追加
+
+print('I love PyScript')
+print('Python version: {}'.format(platform.python_version())) # 追加
+    </py-script>
+
+  </body>
+
 </html>
